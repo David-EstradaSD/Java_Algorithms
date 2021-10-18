@@ -4,9 +4,7 @@ import java.util.Arrays;
 
 public class MaxProductOfTwoNums {
 
-	// (1) Find the maximum product of two numbers in an unsorted array
-	// Take 1 input, an array of ints, and return the max product
-	// (2) Find the pair of indices instead of the max product.
+	// Find the maximum product of two numbers in an unsorted array
 
 	public static void main(String[] args) {
 
@@ -70,7 +68,7 @@ public class MaxProductOfTwoNums {
 		int maxProduct = arr[length - 2] * arr[length - 1]; // since its now sorted, multiply the last 2 indexes 
 		int minProduct = arr[0] * arr[1];
 		
-		if (maxProduct > minProduct) {
+		if (maxProduct > minProduct) { // this checks for 
 			return maxProduct;
 		} else {
 			return minProduct;
@@ -96,7 +94,7 @@ public class MaxProductOfTwoNums {
 		int min2 = Integer.MAX_VALUE;
 		
 		for (int i = 1; i < length; i++) {
-			if (arr[i] < min1) {
+			if (arr[i] < min1) { 
 				min2 = min1;
 				min1 = arr[i];
 			} else if (arr[i] < min2) {
@@ -112,7 +110,7 @@ public class MaxProductOfTwoNums {
 		int maxProduct = max1 * max2;
 		int minProduct = min1 * min2;
 		
-		if (maxProduct > minProduct) {
+		if (maxProduct > minProduct) { // This is a check to see if the 2 most negative numbers multiplied will result in a larger result than the 2 max numbers  
 			return maxProduct;
 		} else {
 			return minProduct;
