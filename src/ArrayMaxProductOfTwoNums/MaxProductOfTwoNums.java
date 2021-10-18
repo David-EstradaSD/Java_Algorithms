@@ -8,9 +8,9 @@ public class MaxProductOfTwoNums {
 
 	public static void main(String[] args) {
 
-		int[] t1 = { 5, 3, 2, 5, 7, 0, 1 };
-		int[] t2 = { -2, -1, -4, 5, 8, 0 };
-		int[] t3 = { -20, -10, 3, 9, -8 };
+		int[] t1 = { 5, 3, 2, 5, 7, 0, 1 }; // 7 * 5 = 35
+		int[] t2 = { -2, -1, -4, 5, 8, 0 }; // 8 * 5 = 40
+		int[] t3 = { -20, -10, 3, 9, -8 };  // -20 * -10 = 200 
 
 		System.out.println(maxProduct(t1));
 		System.out.println(maxProduct(t2));
